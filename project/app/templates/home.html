@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body bgcolor="#ffad33">
+<h3>String</h3>
+<form action="/apply" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str1"><br><br>
+    <select name="dropdown">
+        <option value="Type_1">Vowel</option>
+        <option value="Type_2">Reverse</option>
+        <option value="Type_3">Alpha Numeric</option>
+        <option value="Type_4">Traverse</option>
+        <option value="Type_5">Ascii</option>
+    </select>
+    <input type="submit">
+</form>
+<h1> Result = {{result}} </h1>
+</body>
+</html>
